@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Education | Blue Earl Technologies</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Industry Specific Styles */
+        .industry-hero {
+            position: relative;
+            background: linear-gradient(rgba(10, 31, 68, 0.85), rgba(10, 31, 68, 0.85)), 
+                        url('https://images.unsplash.com/photo-1523050853063-bd8012fec046?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+            padding: 160px 5% 100px;
+            color: var(--pure-white);
+        }
+
+        .industry-hero::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: var(--cerulean-blue);
+            opacity: 0.15; /* 15% Blue Overlay per Style Guide */
+            pointer-events: none;
+        }
+
+        .comparison-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 5rem 5%;
+            background: var(--pure-white);
+        }
+
+        .comparison-card {
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .card-before {
+            background: #FFF5F5;
+            border-top: 4px solid #E53E3E;
+        }
+
+        .card-after {
+            background: #F0F9FF;
+            border-top: 4px solid var(--cerulean-blue);
+        }
+
+        .comparison-list {
+            list-style: none;
+        }
+
+        .comparison-list li {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            line-height: 1.4;
+        }
+
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            padding: 0 5% 5rem;
+        }
+
+        .solution-item {
+            background: var(--off-white);
+            padding: 2rem;
+            border-radius: 4px;
+            transition: transform 0.3s ease;
+        }
+
+        .solution-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .compliance-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            padding: 2.5rem;
+            background: var(--navy-blue);
+            color: var(--sky-tint);
+        }
+
+        .badge-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            .industry-hero { padding-top: 120px; text-align: center; }
+            .compliance-bar { flex-direction: column; gap: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar" id="mainNav">
+        <div class="nav-logo">BLUE EARL <span style="color: var(--steel-blue); font-weight: normal;">TECHNOLOGIES</span></div>
+        <nav class="nav-links">
+            <a href="/" class="nav-item">Home</a>
+            <a href="/services" class="nav-item">Services</a>
+            <a href="/investing" class="nav-item">Investing</a>
+            <a href="/contact" class="btn-main" style="padding: 10px 20px;">Get Started</a>
+        </nav>
+    </header>
+
+    <section class="industry-hero">
+        <div style="max-width: 800px; position: relative; z-index: 2;">
+            <p style="text-transform: uppercase; letter-spacing: 3px; color: var(--sky-tint); font-weight: bold; margin-bottom: 1rem;">Industry Vertical</p>
+            <h1 style="font-size: 3.5rem; margin-bottom: 1.5rem;">Private Education</h1>
+            <p style="font-size: 1.25rem; opacity: 0.9; line-height: 1.6;">
+                Empowering institutions with digital-first campus management, secure student records, 
+                and automated enrollment workflows protected by FERPA-compliant security.
+            </p>
+            <div style="margin-top: 2.5rem;">
+                <a href="/contact?industry=education" class="btn-main">Request Academic Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="compliance-bar">
+        <div class="badge-container">
+            <i data-lucide="graduation-cap" style="color: var(--steel-blue);"></i>
+            FERPA Certified
+        </div>
+        <div class="badge-container">
+            <i data-lucide="shield-check" style="color: var(--steel-blue);"></i>
+            Data Privacy Standards
+        </div>
+        <div class="badge-container">
+            <i data-lucide="lock" style="color: var(--steel-blue);"></i>
+            SOC2 Type II
+        </div>
+    </div>
+
+    <section class="comparison-section">
+        <div class="comparison-card card-before">
+            <h3 style="color: #C53030;">Legacy Academic Admin</h3>
+            <ul class="comparison-list">
+                <li><i data-lucide="x-circle" style="color: #E53E3E; flex-shrink: 0;"></i> Manual, paper-based enrollment and admissions processes.</li>
+                <li><i data-lucide="x-circle" style="color: #E53E3E; flex-shrink: 0;"></i> Disconnected Student Information Systems (SIS).</li>
+                <li><i data-lucide="x-circle" style="color: #E53E3E; flex-shrink: 0;"></i> Fragmented communication between faculty and parents.</li>
+                <li><i data-lucide="x-circle" style="color: #E53E3E; flex-shrink: 0;"></i> Limited real-time reporting on student performance.</li>
+            </ul>
+        </div>
+        <div class="comparison-card card-after">
+            <h3 style="color: var(--cerulean-blue);">Blue Earl Education Cloud</h3>
+            <ul class="comparison-list">
+                <li><i data-lucide="check-circle-2" style="color: var(--cerulean-blue); flex-shrink: 0;"></i> 100% digital admissions with automated verification.</li>
+                <li><i data-lucide="check-circle-2" style="color: var(--cerulean-blue); flex-shrink: 0;"></i> Integrated portals for grades, schedules, and attendance.</li>
+                <li><i data-lucide="check-circle-2" style="color: var(--cerulean-blue); flex-shrink: 0;"></i> Secure, unified communication messaging systems.</li>
+                <li><i data-lucide="check-circle-2" style="color: var(--cerulean-blue); flex-shrink: 0;"></i> Predictive analytics for student retention and success.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section style="background: var(--pure-white);">
+        <h2 style="text-align: center; margin-bottom: 3rem;">Institutional Solutions</h2>
+        <div class="solutions-grid">
+            <div class="solution-item">
+                <i data-lucide="users" style="color: var(--cerulean-blue); margin-bottom: 1rem;"></i>
+                <h4>Enrollment Management</h4>
+                <p>Streamline the journey from lead capture to classroom placement.</p>
+            </div>
+            <div class="solution-item">
+                <i data-lucide="credit-card" style="color: var(--cerulean-blue); margin-bottom: 1rem;"></i>
+                <h4>Financial Integration</h4>
+                <p>Automated tuition billing, payment plans, and scholarship tracking.</p>
+            </div>
+            <div class="solution-item">
+                <i data-lucide="clipboard-list" style="color: var(--cerulean-blue); margin-bottom: 1rem;"></i>
+                <h4>Learning Portals</h4>
+                <p>Custom LMS integrations and secure student-teacher collaboration hubs.</p>
+            </div>
+            <div class="solution-item">
+                <i data-lucide="bar-chart-3" style="color: var(--cerulean-blue); margin-bottom: 1rem;"></i>
+                <h4>Alumni Relations</h4>
+                <p>CRM tools to manage donor databases and post-graduation engagement.</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 5rem 5%; text-align: center; background: var(--off-white);">
+        <h2 style="margin-bottom: 1.5rem;">Modernize your campus operations.</h2>
+        <p style="margin-bottom: 2rem; color: var(--slate-gray);">Talk to our education technology specialists about your institutional goals.</p>
+        <a href="/contact?industry=education" class="btn-main">Schedule a Consultation</a>
+    </section>
+
+    <script src="index.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

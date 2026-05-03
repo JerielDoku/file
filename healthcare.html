@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare & Insurance | Blue Earl Technologies</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Industry Specific Styles */
+        .industry-hero {
+            position: relative;
+            background: linear-gradient(rgba(10, 31, 68, 0.85), rgba(10, 31, 68, 0.85)), 
+                        url(pci/health.jpeg);
+            background-size: cover;
+            background-position: center;
+            padding: 160px 5% 100px;
+            color: var(--pure-white);
+        }
+
+        .industry-hero::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: var(--cerulean-blue);
+            opacity: 0.15; /* 15% Blue Overlay per Style Guide */
+            pointer-events: none;
+        }
+
+        .comparison-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 5rem 5%;
+            background: var(--pure-white);
+        }
+
+        .comparison-card {
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .card-before {
+            background: #FFF5F5;
+            border-top: 4px solid #E53E3E;
+        }
+
+        .card-after {
+            background: #F0F9FF;
+            border-top: 4px solid var(--cerulean-blue);
+        }
+
+        .comparison-card h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .comparison-list {
+            list-style: none;
+        }
+
+        .comparison-list li {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            line-height: 1.4;
+        }
+
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            padding: 0 5% 5rem;
+        }
+
+        .solution-item {
+            background: var(--off-white);
+            padding: 2rem;
+            border-radius: 4px;
+            transition: transform 0.3s ease;
+        }
+
+        .solution-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .compliance-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            padding: 2.5rem;
+            background: var(--navy-blue);
+            color: var(--sky-tint);
+        }
+
+        .badge-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            .industry-hero { padding-top: 120px; text-align: center; }
+            .compliance-bar { flex-direction: column; gap: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar" id="mainNav">
+        <div class="nav-logo">BLUE EARL <span style="color: var(--steel-blue); font-weight: normal;">TECHNOLOGIES</span></div>
+        <nav class="nav-links">
+            <a href="/" class="nav-item">Home</a>
+            <a href="/services" class="nav-item">Services</a>
+            <a href="/investing" class="nav-item">Investing</a>
+            <a href="/contact" class="btn-main" style="padding: 10px 20px;">Get Started</a>
+        </nav>
+    </header>
+
+    <section class="industry-hero">
+        <div style="max-width: 800px; position: relative; z-index: 2;">
+            <p style="text-transform: uppercase; letter-spacing: 3px; color: var(--sky-tint); font-weight: bold; margin-bottom: 1rem;">Industry Vertical</p>
+            <h1 style="font-size: 3.5rem; margin-bottom: 1.5rem;">Healthcare & Insurance</h1>
+            <p style="font-size: 1.25rem; opacity: 0.9; line-height: 1.6;">
+                Streamlining clinical workflows and securing sensitive patient data through 
+                advanced interoperability and HIPAA-compliant cloud architecture.
+            </p>
+            <div style="margin-top: 2.5rem;">
+                <a href="/contact?industry=healthcare" class="btn-main">Request Industry Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="compliance-bar">
+        <div class="badge-container">
+            <i data-lucide="shield-check" style="color: var(--steel-blue);"></i>
+            HIPAA Compliant
+        </div>
+        <div class="badge-container">
+            <i data-lucide="lock" style="color: var(--steel-blue);"></i>
+            FERPA Certified
+        </div>
+        <div class="badge-container">
+            <i data-lucide="check-square" style="color: var(--steel-blue);"></i>
+            SOC2 Type II
+        </div>
+    </div>
+
+    <section class="comparison-section">
+        <div class="comparison-card card-before">
+            <h3 style="color: #C53030;">Traditional Systems</h3>
+            <ul class="comparison-list">
+                <li><i data-lucide="x-circle" style="color: #E53E3E; flex-shrink: 0;"></i> Manual data entry leading to 15% error rates in claims.</li>
+                <li><i data-lucide="x-circle" style="color: #E53E3E; flex-shrink: 0;"></i> Fragmented patient records across legacy silos.</li>
+                <li><i data-lucide="x-circle" style="color: #E53E3E; flex-shrink: 0;"></i> Delayed insurance authorizations and processing.</li>
+                <li><i data-lucide="x-circle" style="color: #E53E3E; flex-shrink: 0;"></i> High risk of non-compliance with evolving regulations.</li>
+            </ul>
+        </div>
+        <div class="comparison-card card-after">
+            <h3 style="color: var(--cerulean-blue);">The Blue Earl Advantage</h3>
+            <ul class="comparison-list">
+                <li><i data-lucide="check-circle-2" style="color: var(--cerulean-blue); flex-shrink: 0;"></i> Automated OCR and AI-driven data verification.</li>
+                <li><i data-lucide="check-circle-2" style="color: var(--cerulean-blue); flex-shrink: 0;"></i> Unified patient 360-view with HL7/FHIR integration.</li>
+                <li><i data-lucide="check-circle-2" style="color: var(--cerulean-blue); flex-shrink: 0;"></i> Real-time insurance adjudication engine.</li>
+                <li><i data-lucide="check-circle-2" style="color: var(--cerulean-blue); flex-shrink: 0;"></i> Automated audit trails and built-in HIPAA guards.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section style="background: var(--pure-white);">
+        <h2 style="text-align: center; margin-bottom: 3rem;">Specialized Capabilities</h2>
+        <div class="solutions-grid">
+            <div class="solution-item">
+                <i data-lucide="activity" style="color: var(--cerulean-blue); margin-bottom: 1rem;"></i>
+                <h4>Patient Portals</h4>
+                <p>Secure, user-friendly interfaces for appointment scheduling and telehealth.</p>
+            </div>
+            <div class="solution-item">
+                <i data-lucide="file-text" style="color: var(--cerulean-blue); margin-bottom: 1rem;"></i>
+                <h4>Claims Management</h4>
+                <p>End-to-end lifecycle tracking for insurance claims and reimbursement.</p>
+            </div>
+            <div class="solution-item">
+                <i data-lucide="database" style="color: var(--cerulean-blue); margin-bottom: 1rem;"></i>
+                <h4>Health Data Analytics</h4>
+                <p>Predictive modeling to improve patient outcomes and operational efficiency.</p>
+            </div>
+            <div class="solution-item">
+                <i data-lucide="server" style="color: var(--cerulean-blue); margin-bottom: 1rem;"></i>
+                <h4>Legacy Modernization</h4>
+                <p>Seamlessly transitioning legacy EHR data to modern cloud infrastructures.</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 5rem 5%; text-align: center; background: var(--off-white);">
+        <h2 style="margin-bottom: 1.5rem;">Ready to modernize your health network?</h2>
+        <p style="margin-bottom: 2rem; color: var(--slate-gray);">Speak with our industry experts about your specific operational needs.</p>
+        <a href="/contact" class="btn-main">Schedule a Consultation</a>
+    </section>
+
+    <script src="index.js"></script>
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

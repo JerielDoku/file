@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate & Property Management | Blue Earl Technologies</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Industry Specific Styles */
+        .industry-hero {
+            position: relative;
+            background: linear-gradient(rgba(10, 31, 68, 0.85), rgba(10, 31, 68, 0.85)), 
+                        url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+            padding: 160px 5% 100px;
+            color: var(--pure-white);
+        }
+
+        .industry-hero::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: var(--cerulean-blue);
+            opacity: 0.15; /* 15% Blue Overlay per Style Guide */
+            pointer-events: none;
+        }
+
+        .comparison-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 5rem 5%;
+            background: var(--pure-white);
+        }
+
+        .comparison-card {
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .card-before {
+            background: #FFF5F5;
+            border-top: 4px solid #E53E3E;
+        }
+
+        .card-after {
+            background: #F0F9FF;
+            border-top: 4px solid var(--cerulean-blue);
+        }
+
+        .comparison-list {
+            list-style: none;
+        }
+
+        .comparison-list li {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            line-height: 1.4;
+        }
+
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            padding: 0 5% 5rem;
+        }
+
+        .solution-item {
+            background: var(--off-white);
+            padding: 2rem;
+            border-radius: 4px;
+            transition: transform 0.3s ease;
+        }
+
+        .solution-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            padding: 2.5rem;
+            background: var(--navy-blue);
+            color: var(--pure-white);
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            color: var(--sky-tint);
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+
+        .stat-item p {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            .industry-hero { padding-top: 120px; text-align: center; }
+            .stat-bar { flex-direction: column; gap: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar" id="mainNav">
+        <div class="nav-logo">BLUE EARL <span style="color: var(--steel-blue); font-weight: normal;">TECHNOLOGIES</span></div>
+        <nav class="nav-links">
+            <a href="/" class="nav-item">Home</a>
+            <a href="/services" class="nav-item">Services</a>
+            <a href="/investing" class="nav-item">Investing</a>
+            <a href="/contact" class="btn-main" style="padding: 10px 20px;">Get Started</a>
+        </nav>
+    </header>
+
+    <section class="industry-hero">
+        <div style="max-width: 800px; position: relative; z-index: 2;">
+            <p style="text-transform: uppercase; letter-spacing: 3px; color: var(--sky-tint); font-weight: bold; margin-bottom: 1rem;">Industry Vertical</p>
+            <h1 style="font-size: 3.5rem; margin-bottom: 1.5rem;">Real Estate & Property Management</h1>
+            <p style="font-size: 1.25rem; opacity: 0.9; line-height: 1.6;">
+                Transforming property portfolios into digital assets through automated leasing, 
+                intelligent maintenance tracking, and real-time financial reporting.
+            </p>
+            <div style="margin-top: 2.5rem;">
+                <a href="/contact?industry=realestate" class="btn-main">Request Portfolio Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="stat-bar">
+        <div class="stat-item">
+            <h3>30%</h3>
+            <p>Reduction in Vacancy Time</p>
+        </div>
+        <div class="stat-item">
+            <h3>24/7</h3>
+            <p>Automated Tenant Support</p>
+        </div>
+        <div class="stat-item">
+            <h3>100%</h3>
+            <p>Digital Lease Execution</p>
+        </div>
+    </div>
+
+    <section class="comparison-section">
+        <div class="comparison-card card-before">
+            <h3 style="color: #C53030;">Legacy Management</h3>
+            <ul class="comparison-list">
+                <li><i data-lucide="x-circle" style="color: #E53E3E; flex-shrink: 0;"></i> Paper-heavy leasing processes and physical document storage.</li>
+                <li><i data-lucide="x-circle" style="color: #E53E3E; flex-shrink: 0;"></i> Reactive maintenance leading to higher long-term repair costs.</li>
+                <li><i data-lucide="x-circle" style="color: #E53E3E; flex-shrink: 0;"></i> Manual rent collection and fragmented financial spreadsheets.</li>
+                <li><i data-lucide="x-circle" style="color: #E53E3E; flex-shrink: 0;"></i> Limited visibility into real-time portfolio performance.</li>
+            </ul>
+        </div>
+        <div class="comparison-card card-after">
+            <h3 style="color: var(--cerulean-blue);">Blue Earl Ecosystem</h3>
+            <ul class="comparison-list">
+                <li><i data-lucide="check-circle-2" style="color: var(--cerulean-blue); flex-shrink: 0;"></i> Fully digital, mobile-first leasing and e-signatures.</li>
+                <li><i data-lucide="check-circle-2" style="color: var(--cerulean-blue); flex-shrink: 0;"></i> Predictive maintenance alerts and automated work orders.</li>
+                <li><i data-lucide="check-circle-2" style="color: var(--cerulean-blue); flex-shrink: 0;"></i> Integrated payment gateways with auto-reconciliation.</li>
+                <li><i data-lucide="check-circle-2" style="color: var(--cerulean-blue); flex-shrink: 0;"></i> Executive dashboards with deep-dive asset analytics.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section style="background: var(--pure-white);">
+        <h2 style="text-align: center; margin-bottom: 3rem;">Portfolio Solutions</h2>
+        <div class="solutions-grid">
+            <div class="solution-item">
+                <i data-lucide="key" style="color: var(--cerulean-blue); margin-bottom: 1rem;"></i>
+                <h4>Smart Access</h4>
+                <p>Integration with IoT hardware for secure, keyless entry and self-guided tours.</p>
+            </div>
+            <div class="solution-item">
+                <i data-lucide="wrench" style="color: var(--cerulean-blue); margin-bottom: 1rem;"></i>
+                <h4>Maintenance Hub</h4>
+                <p>Centralized vendor management and automated tenant repair requests.</p>
+            </div>
+            <div class="solution-item">
+                <i data-lucide="bar-chart-3" style="color: var(--cerulean-blue); margin-bottom: 1rem;"></i>
+                <h4>Financial Suite</h4>
+                <p>Automated accounting, tax-ready reporting, and owner distributions.</p>
+            </div>
+            <div class="solution-item">
+                <i data-lucide="users" style="color: var(--cerulean-blue); margin-bottom: 1rem;"></i>
+                <h4>Tenant Experience</h4>
+                <p>Branded mobile apps for payments, communication, and community updates.</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 5rem 5%; text-align: center; background: var(--off-white);">
+        <h2 style="margin-bottom: 1.5rem;">Optimize your property operations.</h2>
+        <p style="margin-bottom: 2rem; color: var(--slate-gray);">Discover how our custom technology can increase your Net Operating Income (NOI).</p>
+        <a href="/contact?industry=realestate" class="btn-main">Talk to a Specialist</a>
+    </section>
+
+    <script src="index.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

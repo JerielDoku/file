@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manufacturing | Blue Earl Technologies</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .industry-hero {
+            position: relative;
+            background: linear-gradient(rgba(10, 31, 68, 0.85), rgba(10, 31, 68, 0.85)), 
+                        url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+            padding: 160px 5% 100px;
+            color: var(--pure-white);
+        }
+        .industry-hero::after {
+            content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: var(--cerulean-blue); opacity: 0.15; pointer-events: none;
+        }
+        .comparison-section { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; padding: 5rem 5%; }
+        .comparison-card { padding: 3rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .card-before { background: #FFF5F5; border-top: 4px solid #E53E3E; }
+        .card-after { background: #F0F9FF; border-top: 4px solid var(--cerulean-blue); }
+        .solutions-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; padding: 0 5% 5rem; }
+        .solution-item { background: var(--off-white); padding: 2rem; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <header class="navbar" id="mainNav">
+        <div class="nav-logo">BLUE EARL <span style="color: var(--steel-blue); font-weight: normal;">TECHNOLOGIES</span></div>
+        <nav class="nav-links">
+            <a href="/" class="nav-item">Home</a>
+            <a href="/services" class="nav-item">Services</a>
+            <a href="/investing" class="nav-item">Investing</a>
+            <a href="/contact" class="btn-main" style="padding: 10px 20px;">Get Started</a>
+        </nav>
+    </header>
+
+    <section class="industry-hero">
+        <div style="max-width: 800px; position: relative; z-index: 2;">
+            <p style="text-transform: uppercase; letter-spacing: 3px; color: var(--sky-tint); font-weight: bold; margin-bottom: 1rem;">Industry Vertical</p>
+            <h1 style="font-size: 3.5rem; margin-bottom: 1.5rem;">Manufacturing</h1>
+            <p style="font-size: 1.25rem; opacity: 0.9; line-height: 1.6;">Implementing Industry 4.0 solutions to eliminate downtime and optimize shop-floor throughput.</p>
+            <div style="margin-top: 2.5rem;">
+                <a href="/contact?industry=manufacturing" class="btn-main">Request Plant Audit</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="comparison-section">
+        <div class="comparison-card card-before">
+            <h3 style="color: #C53030;">Traditional Factory</h3>
+            <ul style="list-style: none; line-height: 1.8;">
+                <li><i data-lucide="x-circle" style="color: #E53E3E; margin-right: 10px;"></i> Reactive maintenance after machinery failure.</li>
+                <li><i data-lucide="x-circle" style="color: #E53E3E; margin-right: 10px;"></i> Paper-based production logs and QA.</li>
+                <li><i data-lucide="x-circle" style="color: #E53E3E; margin-right: 10px;"></i> Disconnected floor-to-office communication.</li>
+            </ul>
+        </div>
+        <div class="comparison-card card-after">
+            <h3 style="color: var(--cerulean-blue);">Smart Manufacturing</h3>
+            <ul style="list-style: none; line-height: 1.8;">
+                <li><i data-lucide="check-circle-2" style="color: var(--cerulean-blue); margin-right: 10px;"></i> Predictive sensor-based machine health.</li>
+                <li><i data-lucide="check-circle-2" style="color: var(--cerulean-blue); margin-right: 10px;"></i> Real-time ERP & MES dashboard integration.</li>
+                <li><i data-lucide="check-circle-2" style="color: var(--cerulean-blue); margin-right: 10px;"></i> AI-driven quality control and defect detection.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="solutions-grid">
+        <div class="solution-item">
+            <i data-lucide="cpu" style="color: var(--cerulean-blue); margin-bottom: 1rem;"></i>
+            <h4>IIoT Integration</h4>
+            <p>Connecting physical machinery to high-speed data networks.</p>
+        </div>
+        <div class="solution-item">
+            <i data-lucide="shield-check" style="color: var(--cerulean-blue); margin-bottom: 1rem;"></i>
+            <h4>Safety Compliance</h4>
+            <p>Automated safety audits and real-time hazard monitoring.</p>
+        </div>
+        <div class="solution-item">
+            <i data-lucide="settings" style="color: var(--cerulean-blue); margin-bottom: 1rem;"></i>
+            <h4>Process Automation</h4>
+            <p>Reducing manual intervention in high-volume production lines.</p>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

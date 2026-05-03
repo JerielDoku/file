@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investing | Blue Earl Technologies</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .invest-hero { background: var(--navy-blue); color: var(--pure-white); padding: 120px 5% 80px; text-align: center; }
+        .thesis-section { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; padding: 5rem 5%; background: var(--pure-white); }
+        .form-container { background: var(--off-white); padding: 4rem 5%; border-top: 1px solid var(--light-gray); }
+        .invest-form { max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.5rem; }
+        .input-group { display: flex; flex-direction: column; gap: 0.5rem; }
+        input, select, textarea { padding: 12px; border: 1px solid var(--light-gray); border-radius: 4px; font-family: 'Calibri', sans-serif; }
+        input:focus { border-color: var(--cerulean-blue); outline: none; }
+    </style>
+</head>
+<body>
+    <header class="navbar" id="mainNav">
+        <div class="nav-logo">BLUE EARL <span style="font-weight: normal; color: var(--steel-blue);">TECHNOLOGIES</span></div>
+        <nav class="nav-links">
+            <a href="/" class="nav-item">Home</a>
+            <a href="/services" class="nav-item">Services</a>
+            <a href="/investing" class="nav-item active">Investing</a>
+            <a href="/contact" class="btn-main">Get Started</a>
+        </nav>
+    </header>
+
+    <section class="invest-hero">
+        <h1 style="font-size: 3rem; margin-bottom: 1rem;">Capital for Essential Innovation</h1>
+        <p style="color: var(--sky-tint); font-size: 1.2rem;">We invest in software founders building the backbone of industry.</p>
+    </section>
+
+    <section class="thesis-section">
+        <div>
+            <h2 style="color: var(--cerulean-blue); margin-bottom: 1rem;">Our Thesis</h2>
+            <p>We focus on "invisible" technology—the mission-critical systems that allow hospitals to run, factories to produce, and supply chains to move. We provide more than capital; we provide technical delivery excellence.</p>
+        </div>
+        <div>
+            <h2 style="color: var(--cerulean-blue); margin-bottom: 1rem;">What We Look For</h2>
+            <ul style="list-style: none; line-height: 2;">
+                <li><i data-lucide="check" style="color: var(--cerulean-blue); margin-right: 8px;"></i> B2B Software & SaaS</li>
+                <li><i data-lucide="check" style="color: var(--cerulean-blue); margin-right: 8px;"></i> Proven Industry Use-Case</li>
+                <li><i data-lucide="check" style="color: var(--cerulean-blue); margin-right: 8px;"></i> Scalable Infrastructure</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="form-container">
+        <div class="invest-form">
+            <h2 style="text-align: center;">Pitch Your Vision</h2>
+            <div class="input-group">
+                <label>Company Name</label>
+                <input type="text" placeholder="Enter company name">
+            </div>
+            <div class="input-group">
+                <label>Industry Vertical</label>
+                <select>
+                    <option>Healthcare</option>
+                    <option>Manufacturing</option>
+                    <option>Logistics</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label>Brief Pitch</label>
+                <textarea rows="5" placeholder="Describe your solution..."></textarea>
+            </div>
+            <button class="btn-main">Submit Proposal</button>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>

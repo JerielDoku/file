@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Earl Technologies | Innovation for Essential Industries</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <div class="nav-overlay" id="mobileOverlay">
+        <div class="close-btn" onclick="toggleMenu()"><i data-lucide="x"
+                style="width: 40px; height: 40px; color: var(--navy-blue);"></i></div>
+        <a href="/" class="mobile-link">Home</a>
+        <a href="services.html" class="mobile-link">Services Page</a>
+        <div class="mobile-link" onclick="toggleAccordion()">Industries <i data-lucide="chevron-down" id="accIcon"></i>
+        </div>
+        <div class="mobile-acc-content" id="accContent">
+            <a href="/industries/healthcare" class="mobile-sub-link">Healthcare & Insurance</a>
+            <a href="/industries/realestate" class="mobile-sub-link">Real Estate & Property</a>
+            <a href="/industries/privateeducation" class="mobile-sub-link">Private Education</a>
+            <a href="/industries/food" class="mobile-sub-link">Food & Agriculture</a>
+            <a href="/industries/manufacturing" class="mobile-sub-link">Manufacturing</a>
+            <a href="/industries/logistics" class="mobile-sub-link">Logistics & Distribution</a>
+            <a href="/industries/professionalservices" class="mobile-sub-link">Professional Services</a>
+            <a href="/industries/coreservices" class="mobile-sub-link">Core Services</a>
+        </div>
+        <a href="../s/investing.html" class="mobile-link">Investing</a>
+        <a href="/insights.html" class="mobile-link">Insights</a>
+        <a href="/about.html" class="mobile-link">About Us Page</a>
+        <a href="/contact.html" class="mobile-footer-cta">Contact Page</a>
+    </div>
+
+    <header class="navbar" id="mainNav">
+        <div class="nav-logo">BLUE EARL <span>TECHNOLOGIES</span></div>
+        <nav class="nav-links">
+            <a href="/" class="nav-item">Home</a>
+            <a href="/services.html" class="nav-item">Services Page</a>
+            <div class="nav-item industries-trigger">
+                Industries <i data-lucide="chevron-down" style="width:14px; margin-left:5px;"></i>
+                <div class="mega-menu">
+                    <div style="display: flex; flex-direction: column;">
+                        <a href="healthcare.html">Healthcare & Insurance</a>
+                        <a href="#">Real Estate & Property</a>
+                        <a href="#">Private Education</a>
+                        <a href="#">Food & Agriculture</a>
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                        <a href="#">Manufacturing</a>
+                        <a href="#">Logistics & Distribution</a>
+                        <a href="#">Professional Services</a>
+                        <a href="#">Core Services</a>
+                    </div>
+                </div>
+            </div>
+            <a href="/investing.html" class="nav-item">Investing</a>
+            <a href="/insights.html" class="nav-item">Insights</a>
+            <a href="/about.html" class="nav-item">About Us Page</a>
+            <a href="/contact.html" class="btn-cta">Contact Page</a>
+        </nav>
+        <div class="mobile-toggle" onclick="toggleMenu()"><i data-lucide="menu" style="width: 30px; height: 30px;"></i>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <h1 class="hero-title">
+                Modernizing <span id="spin-text" class="text-accent">Healthcare</span> <br>
+                for the Next Generation.
+            </h1>
+            <p class="hero-subtitle">
+                We design, build, and implement cutting-edge software strategies that
+                streamline operations for essential industries.
+            </p>
+            <div class="hero-btns">
+                <a href="/contact.html" class="btn-main">Get Started</a>
+                <a href="/services.html" class="btn-outline">Our Services Page</a>
+            </div>
+        </div>
+
+        <div class="trust-bar">
+            <p class="trust-label">Trusted by Leaders in</p>
+            <div class="logo-track">
+                <div class="logo-item"><i data-lucide="hospital"></i> Healthcare</div>
+                <div class="logo-item"><i data-lucide="factory"></i> Manufacturing</div>
+                <div class="logo-item"><i data-lucide="graduation-cap"></i> Education</div>
+                <div class="logo-item"><i data-lucide="truck"></i> Logistics</div>
+                <div class="logo-item"><i data-lucide="building-2"></i> Real Estate</div>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

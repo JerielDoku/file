@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Services | Blue Earl Technologies</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .services-header { padding: 120px 5% 60px; background: var(--navy-blue); color: var(--pure-white); text-align: center; }
+        .core-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2.5rem; padding: 4rem 5%; }
+        .core-card { background: var(--pure-white); padding: 3rem; border-radius: 6px; border-top: 4px solid var(--cerulean-blue); box-shadow: 0 4px 15px rgba(0,0,0,0.06); }
+        .core-card h2 { margin: 1.5rem 0 1rem; color: var(--navy-blue); }
+        .core-card ul { list-style: none; margin-top: 1.5rem; }
+        .core-card li { margin-bottom: 0.8rem; display: flex; align-items: center; gap: 10px; color: var(--slate-gray); }
+        .cta-banner { background: var(--off-white); padding: 5rem 5%; text-align: center; }
+    </style>
+</head>
+<body>
+    <header class="navbar" id="mainNav">
+        <div class="nav-logo">BLUE EARL <span style="color: var(--steel-blue); font-weight: normal;">TECHNOLOGIES</span></div>
+        <nav class="nav-links">
+            <a href="/" class="nav-item">Home</a>
+            <a href="/services" class="nav-item">Services</a>
+            <a href="/investing" class="nav-item">Investing</a>
+            <a href="/contact" class="btn-main" style="padding: 10px 20px;">Get Started</a>
+        </nav>
+    </header>
+
+    <section class="services-header">
+        <h1 style="font-size: 3rem; margin-bottom: 1rem;">Core Technology Services</h1>
+        <p style="color: var(--sky-tint); max-width: 700px; margin: 0 auto; font-size: 1.2rem;">Comprehensive technical expertise to build, scale, and secure your enterprise infrastructure.</p>
+    </section>
+
+    <div class="core-grid">
+        <div class="core-card">
+            <i data-lucide="code-2" style="color: var(--cerulean-blue); width: 40px; height: 40px;"></i>
+            <h2>Software Development</h2>
+            <p>We build robust web and mobile applications using modern frameworks that prioritize speed and security.</p>
+            <ul>
+                <li><i data-lucide="check" style="width: 18px;"></i> Custom React & Astro Apps</li>
+                <li><i data-lucide="check" style="width: 18px;"></i> API Design & Integration</li>
+                <li><i data-lucide="check" style="width: 18px;"></i> Legacy System Refactoring</li>
+            </ul>
+        </div>
+        <div class="core-card">
+            <i data-lucide="database" style="color: var(--cerulean-blue); width: 40px; height: 40px;"></i>
+            <h2>Data Infrastructure</h2>
+            <p>From cloud migration to real-time analytics, we ensure your data is accessible, clean, and actionable.</p>
+            <ul>
+                <li><i data-lucide="check" style="width: 18px;"></i> Cloud Migration (AWS/Azure)</li>
+                <li><i data-lucide="check" style="width: 18px;"></i> Data Warehousing</li>
+                <li><i data-lucide="check" style="width: 18px;"></i> Business Intelligence Dashboards</li>
+            </ul>
+        </div>
+        <div class="core-card">
+            <i data-lucide="shield-check" style="color: var(--cerulean-blue); width: 40px; height: 40px;"></i>
+            <h2>Managed Security</h2>
+            <p>Proactive monitoring and threat mitigation to protect your most valuable digital assets.</p>
+            <ul>
+                <li><i data-lucide="check" style="width: 18px;"></i> 24/7 Security Operations (SOC)</li>
+                <li><i data-lucide="check" style="width: 18px;"></i> Compliance Auditing (HIPAA/FERPA)</li>
+                <li><i data-lucide="check" style="width: 18px;"></i> Disaster Recovery Planning</li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="cta-banner">
+        <h2 style="margin-bottom: 1.5rem;">Need a customized technical solution?</h2>
+        <a href="/contact" class="btn-main">Consult Our Architects</a>
+    </section>
+
+    <script src="index.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
